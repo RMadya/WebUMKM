@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -26,10 +27,11 @@
                 </div>
             </a>
 
-            <!-- MENU NAVIGASI UTAMA -->
+            <!-- MENU NAVIGASI UTAMA (Form dihapus dari menu karena sudah ada tombol Daftar UMKM) -->
             <nav class="nav-menu">
                 <ul class="nav-list">
                     <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#fitur" class="nav-link">Fitur</a></li>
                     <li><a href="#kekuatan" class="nav-link">Kekuatan</a></li>
                     <li><a href="#kekurangan" class="nav-link">Kekurangan</a></li>
                     <li><a href="#anggota" class="nav-link">Anggota</a></li>
@@ -44,14 +46,44 @@
                         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                     </button>
                 </form>
-                <a href="#about" class="btn-cta">E-Katalog</a>
+                <a href="#kontak" class="btn-cta">Daftar UMKM</a>
             </div>
         </div>
 
-        <!-- HERO BANNER -->
-        <div class="hero-banner">
-            <h1>Digitalisasi UMKM Desa Paseban Kawis</h1>
-            <p>Pemanfaatan Aplikasi AI dan Website E-Katalog</p>
+        <!-- 1. HERO SECTION (Menggunakan CSS Grid dengan Gambar Pendukung) -->
+        <div class="hero-section">
+            <div class="hero-grid">
+                <!-- Sisi Kiri: Teks Informasi -->
+                <div class="hero-text">
+                    <span class="badge-tag">🚀 Inovasi Digital Desa 2025</span>
+                    <h1>Digitalisasi UMKM Desa Paseban Kawis</h1>
+                    <p>
+                        Pemanfaatan Aplikasi AI dan Website E-Katalog untuk mendukung kemajuan, perluasan pasar, serta efisiensi pemasaran produk UMKM lokal secara digital.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#fitur" class="btn-hero-primary">Jelajahi Fitur</a>
+                        <a href="#kontak" class="btn-hero-secondary">Daftar UMKM</a>
+                    </div>
+                </div>
+
+                <!-- Sisi Kanan: Gambar Pendukung Hero & Stats Card -->
+                <div class="hero-media">
+                    <div class="hero-image-wrapper">
+                        <img src="images/hero-display.jpg" alt="Platform E-Katalog & AI UMKM Desa Paseban Kawis" class="hero-img">
+                        <div class="card-badge">E-Katalog Active</div>
+                    </div>
+                    <div class="card-stats">
+                        <div class="stat-item">
+                            <span class="stat-num">100+</span>
+                            <span class="stat-label">Produk UMKM</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num">AI Powered</span>
+                            <span class="stat-label">Deskripsi Otomatis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -59,57 +91,103 @@
     <!-- KONTEN UTAMA -->
     <main>
 
-        <!-- ABOUT -->
+        <!-- ABOUT (Dengan Gambar Pendukung Layout Grid) -->
         <section id="about">
             <h2>About / Ringkasan Jurnal</h2>
 
-            <article>
-                <h3>
-                    Pemanfaatan Aplikasi AI dan Website E-Katalog
-                    untuk Digitalisasi UMKM Desa Paseban Kawis
-                </h3>
+            <div class="about-grid">
+                <div class="about-text">
+                    <article>
+                        <h3>
+                            Pemanfaatan Aplikasi AI dan Website E-Katalog
+                            untuk Digitalisasi UMKM Desa Paseban Kawis
+                        </h3>
 
-                <p>
-                    Jurnal ini membahas pemanfaatan teknologi digital,
-                    khususnya aplikasi Artificial Intelligence (AI) dan
-                    website E-Katalog, untuk membantu proses digitalisasi
-                    Usaha Mikro, Kecil, dan Menengah (UMKM) di Desa
-                    Paseban Kawis.
-                </p>
+                        <p>
+                            Jurnal ini membahas pemanfaatan teknologi digital,
+                            khususnya aplikasi Artificial Intelligence (AI) dan
+                            website E-Katalog, untuk membantu proses digitalisasi
+                            Usaha Mikro, Kecil, dan Menengah (UMKM) di Desa
+                            Paseban Kawis.
+                        </p>
 
-                <p>
-                    Pemanfaatan teknologi tersebut bertujuan untuk
-                    membantu pelaku UMKM dalam memperkenalkan produk,
-                    meningkatkan informasi mengenai produk, serta
-                    memperluas jangkauan pemasaran melalui media digital.
-                </p>
+                        <p>
+                            Pemanfaatan teknologi tersebut bertujuan untuk
+                            membantu pelaku UMKM dalam memperkenalkan produk,
+                            meningkatkan informasi mengenai produk, serta
+                            memperluas jangkauan pemasaran melalui media digital.
+                        </p>
 
-                <h3>Informasi Jurnal</h3>
+                        <h3>Informasi Jurnal</h3>
 
-                <ul>
-                    <li>
-                        <strong>Judul:</strong>
-                        Pemanfaatan Aplikasi AI dan Website E-Katalog
-                        untuk Digitalisasi UMKM Desa Paseban Kawis
-                    </li>
+                        <ul>
+                            <li>
+                                <strong>Judul:</strong>
+                                Pemanfaatan Aplikasi AI dan Website E-Katalog
+                                untuk Digitalisasi UMKM Desa Paseban Kawis
+                            </li>
 
-                    <li>
-                        <strong>Penulis:</strong>
-                        Nurul Hadist, Abdurrohman Qoim Haqqi Muhammad, Muhammad Rafi Kurniawan, Keysha Kinanti A., Yudha Alif Auliya
-                    </li>
+                            <li>
+                                <strong>Penulis:</strong>
+                                Nurul Hadist, Abdurrohman Qoim Haqqi Muhammad, Muhammad Rafi Kurniawan, Keysha Kinanti A., Yudha Alif Auliya
+                            </li>
 
-                    <li>
-                        <strong>Tahun Terbit:</strong>
-                        2025
-                    </li>
-                </ul>
-            </article>
+                            <li>
+                                <strong>Tahun Terbit:</strong>
+                                2025
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+
+                <!-- Gambar Pendukung Section About -->
+                <div class="about-media">
+                    <img src="images/about-umkm.jpg" alt="Pemberdayaan UMKM Desa Paseban Kawis" class="section-img">
+                    <div class="image-caption">
+                        <span>💡 Implementasi AI & E-Katalog untuk Kemajuan Desa Paseban Kawis</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. DAFTAR FITUR (Menggunakan CSS Grid) -->
+        <section id="fitur">
+            <div class="section-header">
+                <h2>Fitur Utama & Keunggulan</h2>
+                <p>Susunan fitur yang diatur rapi menggunakan CSS Grid untuk mendukung digitalisasi UMKM Desa.</p>
+            </div>
+
+            <div class="fitur-grid">
+                <div class="fitur-card">
+                    <div class="fitur-icon">🛍️</div>
+                    <h3>E-Katalog Interaktif</h3>
+                    <p>Menampilkan katalog produk UMKM secara digital lengkap dengan foto, deskripsi, harga, dan kontak pemesanan.</p>
+                </div>
+
+                <div class="fitur-card">
+                    <div class="fitur-icon">🤖</div>
+                    <h3>Bantuan AI Konten</h3>
+                    <p>Memanfaatkan kecerdasan buatan untuk pembuatan promosi, narasi produk, dan strategi konten secara efisien.</p>
+                </div>
+
+                <div class="fitur-card">
+                    <div class="fitur-icon">📈</div>
+                    <h3>Pemasaran Digital</h3>
+                    <p>Memperluas jangkauan pasar UMKM hingga luar wilayah desa dengan integrasi media digital.</p>
+                </div>
+
+                <div class="fitur-card">
+                    <div class="fitur-icon">💡</div>
+                    <h3>Edukasi & Pendampingan</h3>
+                    <p>Pelatihan berkala bagi pelaku usaha desa untuk meningkatkan pemahaman teknologi digital.</p>
+                </div>
+            </div>
         </section>
 
 
         <!-- KEKUATAN -->
         <section id="kekuatan">
-            <h2>Kekuatan</h2>
+            <h2>Kekuatan Jurnal</h2>
 
             <article>
                 <p>
@@ -149,7 +227,7 @@
 
         <!-- KEKURANGAN -->
         <section id="kekurangan">
-            <h2>Kekurangan</h2>
+            <h2>Kekurangan Jurnal</h2>
 
             <article>
                 <p>
@@ -183,6 +261,60 @@
         </section>
 
 
+        <!-- 3. FORM DAN INPUT (Dengan Label Jelas dan Focus State) -->
+        <section id="kontak">
+            <div class="section-header">
+                <h2>Form Konsultasi & Pendaftaran UMKM</h2>
+                <p>Formulir lengkap dengan label yang jelas serta focus state aktif saat bidang input dipilih.</p>
+            </div>
+
+            <form class="umkm-form" onsubmit="event.preventDefault(); alert('Terima kasih! Pendaftaran Anda telah berhasil dikirim.');">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="nama-pemilik">Nama Pemilik Usaha <span class="required">*</span></label>
+                        <input type="text" id="nama-pemilik" name="nama-pemilik" placeholder="Contoh: Budi Santoso" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nama-umkm">Nama Usaha / UMKM <span class="required">*</span></label>
+                        <input type="text" id="nama-umkm" name="nama-umkm" placeholder="Contoh: Keripik Paseban Berkah" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Alamat Email <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telepon">Nomor WhatsApp / HP <span class="required">*</span></label>
+                        <input type="tel" id="telepon" name="telepon" placeholder="081234567890" required>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="kategori">Kategori Produk <span class="required">*</span></label>
+                        <select id="kategori" name="kategori" required>
+                            <option value="" disabled selected>-- Pilih Kategori Produk --</option>
+                            <option value="kuliner">Kuliner & Makanan Olahan</option>
+                            <option value="kerajinan">Kerajinan Tangan & Kriya</option>
+                            <option value="pertanian">Hasil Pertanian & Perkebunan</option>
+                            <option value="jasa">Jasa & Usaha Kreatif</option>
+                            <option value="lainnya">Lainnya</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="pesan">Deskripsi Usaha / Pesan <span class="required">*</span></label>
+                        <textarea id="pesan" name="pesan" rows="4" placeholder="Jelaskan secara singkat mengenai produk atau bantuan yang dibutuhkan..." required></textarea>
+                    </div>
+                </div>
+
+                <div class="form-action">
+                    <button type="submit" class="btn-submit">Kirim Pendaftaran</button>
+                </div>
+            </form>
+        </section>
+
+
         <!-- ANGGOTA KELOMPOK -->
         <section id="anggota">
             <h2>Anggota Kelompok</h2>
@@ -193,11 +325,11 @@
                 </p>
 
                 <ol>
-                    <li>[Syera Silvia Erby] - [20240140222]</li>
-                    <li>[Vania Azharia] - [20240140257]</li>
-                    <li>[Shafa Salsabila Ramadhani] - [20240140208]</li>
-                    <li>[Sekar Kinasih] - [20240140243]</li>
-                    <li>[Vera Indriani] - [20240140155]</li>
+                    <li>Syera Silvia Erby - 20240140222</li>
+                    <li>Vania Azharia - 20240140257</li>
+                    <li>Shafa Salsabila Ramadhani - 20240140208</li>
+                    <li>Sekar Kinasih - 20240140243</li>
+                    <li>Vera Indriani - 20240140155</li>
                 </ol>
             </article>
         </section>
