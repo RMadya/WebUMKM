@@ -1,0 +1,296 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Plus Jakarta Sans', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f6;
+    color: #2c3e50;
+}
+
+
+/* ==========================================
+   HEADER & NAVBAR (Layout Menggunakan Flexbox)
+   ========================================== */
+
+.site-header {
+    background: linear-gradient(135deg, #16382b 0%, #1f4d3a 100%);
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Container Navigasi Utama dengan Flexbox */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 16px 24px;
+    gap: 20px;
+}
+
+
+/* 1. FLEXBOX: Logo & Brand Area */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.2s ease;
+}
+
+.logo:hover {
+    transform: scale(1.02);
+}
+
+.logo-icon {
+    font-size: 24px;
+    background: rgba(255, 255, 255, 0.15);
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    backdrop-filter: blur(4px);
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-title {
+    font-size: 1.15rem;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+}
+
+.brand-subtitle {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.75);
+    font-weight: 500;
+}
+
+
+/* 2. FLEXBOX: Navigasi Menu */
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 8px 14px;
+    border-radius: 8px;
+    transition: all 0.25s ease;
+}
+
+.nav-link:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.18);
+}
+
+
+/* 3. FLEXBOX: Elemen Navigasi Lainnya (Pencarian & CTA Button) */
+.nav-extra {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    padding: 4px 6px 4px 14px;
+    transition: all 0.3s ease;
+}
+
+.search-form:focus-within {
+    background: rgba(255, 255, 255, 0.22);
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.15);
+}
+
+.search-form input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 0.85rem;
+    width: 100px;
+    font-family: inherit;
+}
+
+.search-form input::placeholder {
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.search-form button {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.search-form button:hover {
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.btn-cta {
+    background-color: #e2b047;
+    color: #16382b;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.85rem;
+    padding: 8px 18px;
+    border-radius: 30px;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 12px rgba(226, 176, 71, 0.3);
+}
+
+.btn-cta:hover {
+    background-color: #f3c25b;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(226, 176, 71, 0.4);
+}
+
+
+/* HERO BANNER SECTION */
+.hero-banner {
+    text-align: center;
+    padding: 45px 20px 55px;
+    background: rgba(0, 0, 0, 0.12);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.hero-banner h1 {
+    margin: 0 0 10px;
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+}
+
+.hero-banner p {
+    margin: 0;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+
+/* ==========================================
+   MAIN CONTENT & SECTIONS
+   ========================================== */
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 30px;
+    padding: 32px 36px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+    border: 1px solid #eef2f0;
+}
+
+section h2 {
+    color: #1f4d3a;
+    margin-top: 0;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #eef2f0;
+    padding-bottom: 12px;
+}
+
+article h3 {
+    color: #2d5a47;
+    margin-top: 24px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+
+/* FOOTER */
+footer {
+    background-color: #16382b;
+    color: white;
+    text-align: center;
+    padding: 24px 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+/* ==========================================
+   RESPONSIVE LAYOUT MENGGUNAKAN FLEXBOX
+   ========================================== */
+
+@media (max-width: 868px) {
+    .navbar-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        padding: 16px;
+    }
+
+    .nav-list {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .nav-extra {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .hero-banner h1 {
+        font-size: 1.6rem;
+    }
+}
